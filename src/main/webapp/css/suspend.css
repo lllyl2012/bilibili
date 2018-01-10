@@ -1,0 +1,32 @@
+#suspend{
+	position:fixed;
+	top:300px;
+	left:1559px;
+	width:39px;
+	font-size:10px;
+	font-weight:670;
+	color:black;
+	background-color:#dddddd;
+	border-radius:3px;
+}
+#suspend>ul{
+	list-style-type:none;
+}
+#suspend li{
+	border-bottom:1px solid #babdb6;
+	height:35px;
+	line-height:35px;
+}
+#suspend li:hover{
+	background-color:#457bf6;
+}
+#suspend a:hover{
+	color:white;
+}
+#suspendimg{
+	width:50px;
+	height:50px;
+	position:absolute;
+	left:-2px;
+	top:400px;
+}

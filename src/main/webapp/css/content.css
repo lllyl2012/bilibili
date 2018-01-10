@@ -1,0 +1,18 @@
+#content-nav{
+	height:50px;
+}
+#content-nav>ul{
+	list-style-type:none;
+}
+#content-nav li{
+	float:left;
+	width:37px;
+	margin-right:20px;
+	margin-top:7px;
+}
+#content-nav1{
+	float:right;
+}
+#content-nav ol{
+	list-style-type:none;
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yl.dao.UserDao">
+	<select id="selectUserByMobile" resultType="cn.yl.entity.User" >
+		SELECT 
+			*,user_id as id 
+		FROM
+			 user
+		WHERE
+			 mobile = #{mobile}
+	</select>
+	<insert id="insertRegisterUser" parameterType="cn.yl.entity.User"
+		useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO
+			user(username,password,role_id,mobile)
+		values(#{username},#{password},3,#{mobile})
+	</insert>
+	<select id="selectHot" resultType="java.lang.String">
+		SELECT path FROM hot;
+	</select>
+	<select id="selectHotProduct" resultType="cn.yl.entity.Product">
+		SELECT
+			product.*,user.username,arrange.arrangename
+		FROM product
+		INNER JOIN
+			user ON product.user_id = user.user_id
+		INNER JOIN arrange ON
+			product.arrange_id = arrange.arrange_id
+		WHERE product.arrange_id =
+		#{arrangid}
+	</select>
+	<select id="selectHistory" resultType="cn.yl.entity.HistoryPro">
+		SELECT
+			p.*,date_format(p.createtime,'%w') as
+			week,u.username,arrange.arrangename,h.readtime
+		FROM 
+			history as h
+		INNER JOIN
+			 user as u ON h.user_id = u.user_id
+		INNER JOIN
+			 product as p ON p.product_id = h.product_id
+		INNER JOIN 
+			arrange ON p.arrange_id = arrange.arrange_id
+		WHERE
+			 h.user_id = #{id} and h.readtime &lt; date_format(date_sub(curdate(),interval 7 day),"%y%m%d");
+	</select>
+	<select id="countCheckName" resultType="int">
+		SELECT
+			 count(*) 
+		FROM
+			 user
+		WHERE
+			 username = #{username}
+	</select>
+	<select id="countCheckMobile" resultType="int">
+		SELECT
+			 count(*) 
+		FROM
+				user 
+		WHERE mobile = #{mobile}
+	</select>
+	<select id="selectLogin" resultType="cn.yl.entity.User">
+		SELECT
+			 * 
+		FROM 
+			user 
+		WHERE
+			mobile = ${mobile}
+	</select>
+	<select id="selectAllUser" resultType="cn.yl.entity.User">
+		SELECT
+			user.*,role.rolename 
+		FROM
+		  user
+		INNER JOIN
+			role ON user.role_id = role.role_id
+		LIMIT
+			 #{pages},7;
+	</select>
+	<select id="countUserNum" resultType="int">
+		SELECT count(*) FROM user
+	</select>
+	<update id="updateUser">
+		UPDATE 
+			user 
+		SET 
+			sign = #{sign},sex = #{sex},username = #{username},head = #{head} 
+		WHERE 
+			mobile = #{mobile}
+	</update>
+	<delete id="deleteUser">
+		DELETE FROM 
+			user 
+		WHERE 
+			mobile = #{mobile}
+	</delete>
+	<select id="selectAnimate" resultType="cn.yl.entity.Product">
+		SELECT
+			product.*,date_format(product.createtime,'%w') as
+			week,user.username,arrange.arrangename from product
+		INNER JOIN 
+			user ON product.user_id = user.user_id
+		INNER JOIN 
+			arrange ON product.arrange_id = arrange.arrange_id
+		WHERE 
+			product.arrange_id = 2
+	</select>
+	<select id="selectGuichu" resultType="cn.yl.entity.Product">
+		SELECT
+			 product.*,user.username,arrange.arrangename 
+		FROM 
+			product 
+		INNER JOIN 
+			user ON product.user_id = user.user_id 
+		INNER JOIN 
+			arrange ON product.arrange_id = arrange.arrange_id 
+		WHERE
+			 product.arrange_id = #{arrange}
+	</select>
+</mapper>

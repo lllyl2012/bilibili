@@ -1,0 +1,192 @@
+#animate-rank-ul {
+	position: absolute;
+	top: 48px;
+	left: 10px;
+	 list-style-type : none;
+	width: 289px;
+	list-style-type: none; 
+	height: 361px;
+}
+
+#animate-rank-ul li {
+	width: 287px;
+	height: 23px;
+	margin-top: 13px;
+	line-height: 23px;
+}
+
+.animate-rank-li-no1to3,.animate-rank-li-no, .animate-rank-li-name, animate-rank-li-index {
+	float: left;
+}
+.animate-rank-li-no1to3{
+	background-color:#fc41f4;
+	color:#eeeeec;
+}
+.animate-rank-li-no{
+	background-color:#babdb6;
+	color:#eeeeec;
+}
+.animate-rank-li-no,.animate-rank-li-no1to3 {
+	border-radius:5px;
+	width: 20px;
+	height: 20px;
+	font-size:13px;
+	font-weight:700;
+}
+
+.animate-rank-li-name {
+	width: 252px;
+	height: 23px;
+	text-align:left;
+	padding-left:15px;
+}
+.animate-rank-li-name:hover{
+	color:#3289fa;
+}
+.animate-rank-li-index {
+    color:#babdb6;
+}
+
+
+/*番剧列表*/
+#animate-everyday{
+	margin-top:2px;
+	width:877px;
+	height:407px;
+}
+.animate-everyday-animateName{
+	position:relative;
+	width:180px;
+	height:71px;
+	float:left;
+	margin-right:37px;
+	margin-top:19px;
+	margin-bottom:10px;
+}
+.animate-everyday-animateName-img{
+	width:76px;
+	height:76px;
+	position:absolute;
+	left:0px;
+	top:-4px;
+	cursor:pointer;
+}
+.animate-everyday-animateName-title{
+	width:100px;
+	height:38px;
+	position:absolute;
+	left:77px;
+	top:0px;
+	font-weight:700;
+	text-align:left;
+  cursor:pointer;
+}
+.animate-everyday-animateName-title:hover{
+	color:#3289fa;
+}
+.animate-everyday-animateName-to{
+    width:50px;
+    height:30px;
+    position:absolute;
+    left:77px;
+    top:40px;
+    line-height:30px;
+    color:#babdb6;
+}
+.animate-everyday-animateName-index{
+    width:40px;
+    height:18px;
+    position:absolute;
+    left:133px;
+    top:48px;
+    line-height:18px;
+    font-size:13px;
+    border-radius:15px;
+    background-color:#f483ff;
+    color:white;
+    cursor:pointer;
+}
+/*鬼畜排行榜*/
+.guichu-rank ul{
+    position: absolute;
+    top: 44px;
+    left: 10px;
+     list-style-type : none;
+    width: 289px;
+    list-style-type: none; 
+    height: 287px;
+}
+.guichu-rank li {
+    width: 287px;
+    height: 23px;
+    margin-top: 13px;
+    line-height: 23px;
+}
+#guichu-everyday{
+  width:879px;
+	height:323px;
+}
+/*鬼畜列表*/
+.guichu-everyday-guichuName{
+	position:relative;
+	width:157px;
+	height:141px;
+	float:left;
+	margin-right:16px;
+	margin-top:11px;
+	margin-bottom:3px;
+}
+.guichu-everyday-guichuName:hover{
+	cursor:pointer;
+	
+}
+.guichu-everyday-describe:hover{
+	cursor:pointer;
+	color:#3289fa;
+}
+.guichu-everyday-guichuimg{
+	width:157px;
+}
+.guichu-everyday-describe{
+	position:absolute;
+	width:144px;
+	bottom:1px;
+	height:30px;
+	text-align:left;
+	padding:5px;
+}
+.guichu-everyday-collandshot{
+	width:150px;
+	height:17px;
+	position:absolute;
+	bottom:1px;
+	left:4px;
+	background-color:white;
+  text-align:left;
+}
+.guichu-everyday-collnumimg{
+	position:absolute;
+	left:2px;
+	top:2px;
+	width:15px;
+	height:15px;
+}
+.guichu-everyday-shotimg{
+	position:absolute;
+  left:75px;
+  top:2px;
+  width:15px;
+    height:15px;
+}
+.guichuProductCollnum{
+	display:block;
+	position:absolute;
+	left:27px;
+	top:2px;
+}
+.guichuProductShot{
+	display:block;
+    position:absolute;
+    left:101px;
+    top:2px;
+}

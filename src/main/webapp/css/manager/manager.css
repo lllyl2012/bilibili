@@ -1,0 +1,214 @@
+#manager-head{
+	margin-top:40px;
+}
+#manager{
+	border:1px solid #d3d7cf;
+	width:988px;
+	height:674px;
+	margin-top:6px;
+	position:relative;
+}
+.list{
+  position:absolute;
+  left:0px;
+  top:51px;
+	width:152px;
+	height:622px;
+	border-right:1px solid #d3d7cf;
+	list-style-type:none;
+}
+.selfcenter{
+	position:absolute;
+  left:0px;
+  top:0px;
+  line-height:50px;
+  font-size:16px;
+  color:#babdb6;
+	border-right:1px solid #d3d7cf;
+	border-bottom:1px solid #d3d7cf;
+	width:152px;
+	height:50px;
+}
+.list-li{
+  width:152px;
+  height:46px;
+  line-height:46px;
+  font-size:15px;
+}
+.list-li-on{
+    background-color:#4685ff;
+    color:white;    
+}
+#title{
+	width:835px;
+	height:95px;
+	position:absolute;
+	left:152px;
+	top:0px;
+}
+.title-content{
+	color:#babdb6;
+	position:absolute;
+	left:37px;
+	top:37px;
+	font-size:20px;
+}
+.huiyuan-content{
+	position:absolute;
+	left:152px;
+	top:95px;
+	width:835px;
+	height:489px;
+	list-style-type:none;
+}
+.content-li{
+	float:left;
+	width:830px;
+	height:59px;
+}
+#fenye{
+	list-style-type:none;
+	position:absolute;
+	left:152px;
+	top:611px;
+	width:825px;
+	height:37px;
+}
+#fenye li{
+	float:left;
+	width:37px;
+	height:37px;
+	line-height:37px;
+	padding:4px;
+	margin-right:4px;
+	
+}
+/* .fenye-onit{ */
+/* 	background-color:#49cfff; */
+/* } */
+
+/*form*/
+.name-title,.mobile-title,.lv-title,.role-title,.remove-title,.password-title{
+	border-right:1px solid #babdb6;
+	float:left;
+	height:59px;
+	line-height:59px;
+}
+.name-title{
+	width:140px;
+}
+.mobile-title{
+	width:219px;
+}
+.lv-title{
+	width:73px;
+}
+.role-title{
+	width:100px;
+}
+.remove-title{
+	width:90px;
+}
+.password-title{
+	width:200px;
+}
+.removeUser:hover{
+	color:#4685ff;
+}
+
+/*个人信息*/
+form{
+	position:relative;
+	left:-80px;
+	top:54px;
+	width:393px;
+	height:600px;
+}
+#username,#sign,#sexm,#sexw,#file{
+	position:absolute;
+}
+#username{
+	left:106px;
+	top:18px;
+	width:161px;
+	height:33px;
+}
+.username{
+    left:20px;
+    top:18px;
+    width:68px;
+    height:31px;
+    line-height:33px;
+}
+#sign{
+	 left:106px;
+    top:90px;
+    width:250px;
+    height:140px;
+}
+.sign{
+	left:20px;
+    top:91px;
+       width:69px;
+    height:40px;
+   
+}
+#sexm{
+	left:106px;
+    top:266px;
+}
+#sexw{
+	left:200px;
+    top:266px;
+}
+.sex{
+   left:20px;
+   top:265px;
+   width:69px;
+   height:40px;
+}
+#womenlabel{
+	position:absolute;
+	left:240px;
+	top:266px;
+}
+#manlabel{
+	position:absolute;
+    left:140px;
+    top:266px;
+}
+#file{
+	left:106px;
+    top:360px;
+
+}
+.file{
+    left:20px;
+    top:360px;
+       width:69px;
+    height:40px;
+}
+#submit{
+	left:69px;
+  top:455px;
+	position:absolute;
+	width:50px;
+	height:30px;
+}
+.username,.sign,.sex,.file{
+	position:absolute;
+}
+
+.fenye-light{
+	background-color:#3892fc;
+}
+#suggest-submit{
+	left:104px;
+  top:256px;
+	position:absolute;
+	width:50px;
+	height:30px;
+}
+.button{
+	cursor:pointer;
+}

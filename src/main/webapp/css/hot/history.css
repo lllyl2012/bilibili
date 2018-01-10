@@ -1,0 +1,47 @@
+/*历史*/
+#users-history{
+	width:342px;
+	height:261px;
+	position:absolute;
+	left:1314px;
+  top:41px;
+  background-color:white;
+}
+.hide-history{
+	display:none;
+}
+#users-history ul{
+	list-style-type:disc;
+}
+#lookmorehistory{
+	width:321px;
+	height:30px;
+	border-radius:4px;
+	line-height:30px;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	background-color:#d3d7cf;
+}
+#users-history p:hover{
+	background-color:#babdb6;
+}
+.history-time{
+	list-style-type:none;
+	color:#babdb6;
+	text-align:left;
+	padding-left:9px;
+	width:328px;
+	line-height:20px;
+	height:20px;
+}
+.users-history-li{
+  text-align:left;
+	width:276px;
+	height:20px;
+
+	margin-left:36px;
+	margin-top:10px;
+}
+
+

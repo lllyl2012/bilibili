@@ -1,0 +1,66 @@
+#register-img1{
+	margin-top:41px;
+}
+form{
+	margin-top:20px;
+	width:410px;
+	height:633px;
+}
+#username,#password,#telephone{
+	width:410px;
+	height:40px;
+	border-radius:4px;
+}
+#password,#telephone{
+	margin-top:41px;
+}
+select{
+	width:76px;
+	height:40px;
+	background-color:#eeeeec;
+}
+#mobile{
+	width:325px;
+	height:40px;
+	border-radius:4px;
+}
+#read{
+	width:410px;
+	height:30px;
+	margin-top:46px;
+}
+#read>a{
+	color:#3289fa;
+}
+#submit,form>p{
+	
+	margin-top:40px;
+	width:410px;
+	height:35px;
+	background-color:white;
+	color:#babdb6;
+	font-size:20px;
+	border:0;
+}
+#submit{
+	background-color:#27a4ff;
+	color:white;
+	border-radius:3px;
+	cursor:pointer;
+}
+.submit-hide{
+	display:none;
+}
+#have{
+	color:#3289fa;
+	float:right;
+}
+.checkPart{
+	display:block;
+	width:267px;
+	height:16px;
+	position:absolute;
+	text-align:left;
+	color:red;
+	font-size:13px;
+}

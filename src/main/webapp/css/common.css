@@ -1,0 +1,21 @@
+*{
+	margin:0 auto;
+	padding:0;
+
+}
+input{
+	  border:1px solid #babdb6;
+}
+body{
+	font-family:"微软雅黑"，"文泉驿正黑","黑体";
+	font-size:12px;
+	text-align:center;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+body>div{
+	width:1175px;
+/* 	border:1px solid black; */
+}

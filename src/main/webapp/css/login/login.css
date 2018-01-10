@@ -1,0 +1,114 @@
+#login-img1{
+	margin-top:41px;
+}
+#login-content{
+	position:relative;
+	height:683px;
+	width:100%;
+}
+#login-img2{
+	float:left;
+}
+#login-left{
+	position:absolute;
+	left:959px;
+	top:62px;
+	border-left:1px solid #babdb6;
+	height:300px;
+}
+
+/*登录表单*/
+#login-content form{
+	position:absolute;
+	left:1023px;
+	top:44px;
+	width:413px;
+	height:300px;
+}
+#username{
+	width:409px;
+	height:37px;
+	border-radius:4px;
+}
+#password{
+	border-radius:4px;
+	margin-top:33px;
+	width:409px;
+	height:37px;
+
+}
+#login-img3{
+	position:absolute;
+	left:1px;
+	top:136px;
+}
+#remembermediv{
+	position:absolute;
+	width:100%;
+	top:196px;
+}
+#remembermediv>div{
+	float:left;
+}
+#remembermespan1{
+	color:#858585;
+}
+#remembermespan2,#remembermespan3{
+	float:right;
+	margin-right:10px;
+}
+#remembermespan2:hover,#remembermespan3:hover{
+	color:#3289fa;
+}
+#login,#register{
+	position:absolute;
+	width:100px;
+	height:40px;
+	 width:170px;
+  height:44px;
+	border-radius:4px;
+}
+#login{
+	background-color:#27a4ff;
+  left:0px;
+  top:226px;
+  color:white;
+}
+#login:hover{
+	cursor:pointer;
+}
+#register{
+	border:1px solid #babdb6;
+	line-height:44px;
+	left:200px;
+	top:225px;
+}
+#login-useother{
+	position:absolute;
+	left:0px;
+	top:276px;
+	width:300px;
+	height:28px;
+	line-height:28px;
+}
+
+#login-useother p,#login-useother img{
+	float:left;
+}
+#login-useother div{
+	float:left;
+	margin-right:34px;
+}
+#yanzheng{
+	position:absolute;
+	left:117px;
+	top:136px;
+	width:93px;
+	height:30px;
+}
+#theresultofyz{
+	display:block;
+	position:absolute;
+	left:220px;
+	top:146px;
+}
